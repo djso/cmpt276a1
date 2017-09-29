@@ -1,0 +1,114 @@
+#container {
+    padding-top: 1px;
+    padding-left: 20px;
+}
+
+#lowerbounds {
+    border: solid;
+    border-color:rgb(211,227,234);    
+    border-radius: 5px; 
+    border-width: 1px;    
+    background-color: rgb(234,241,243);
+    width: 500px;
+    height: 950px;
+    display: inline-block;
+    margin: 15px;
+    position: absolute;
+    top: 100px;    
+}
+
+#histogram {
+    border: solid;
+    border-color:rgb(211,227,234); 
+    border-radius: 5px;     
+    border-width: 1px;
+    background-color: rgb(234,241,243);
+    width: 400px;
+    height: 570px;
+    display: inline-block;
+    margin: 16px;
+    top: 100px;
+    left: 551px;
+    position: absolute;
+
+}
+
+ul {
+    list-style: none;
+    height: 300px;
+}
+li{
+    font-size: 20;
+    margin-left: 7px;
+}
+#lb{
+    height: auto;
+    width:100px;
+    margin: 0;
+    display: inline-block;
+}
+#lb li{
+    padding-bottom: 46px;
+    padding-top: 1px;
+}
+#input{
+    height: auto;
+    width:auto;
+    margin: 0;
+    display: inline-block;
+}
+#input li{
+    padding-bottom: 23px;
+}
+input{
+    height: 47px;
+    width: 115px;
+    
+}
+input[type="number"]{
+    font-family: "Georgia";
+    font-size: 18px;
+    font-weight: bold;
+    text-align: right;
+    padding-right: 15px;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+}
+
+#hg{
+    height: auto;
+    width:100px;
+    margin: 0;
+    display: inline-block;
+}
+#hg li{
+    padding-bottom: 19px;
+}
+
+#graph{
+    height: auto;
+    width:150px;
+    margin: 0;
+    display: inline-block;    
+}
+#graph li{
+    height: 27px;
+    padding-bottom: 15px;
+}
+
+h2 {
+    display: block;
+    height: 50px;
+    margin-left: 15px;
+    color: rgb(201,6,12);
+    font-weight: 700;
+}
+
+h1 {
+    font-family: Helvetica;
+    font-size: 36px;
+    font-weight: 400;
+}

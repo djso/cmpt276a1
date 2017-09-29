@@ -1,36 +1,71 @@
 <html>
     <head>
+        <link rel="stylesheet" type="text/css" href="histogram.css">
         <script src="calculate.js"></script>
     </head>
-    
     <body>
-    <h1>Histogram Generator</h1>
-        <br>
-        <div id = "container">
-            <div id = "bounds" width = "500px" height = "1000px" background-color = "gray">
-                <h2>Lower bounds</h2>
-                <ul>
-                    <li><input type="number" id="max" value="100" onkeyup="checkBounds()"></li>
-                    <li><input type="number" id="aplus" value="95"></li>
-                    <li><input type="text" id="a" value="90"></li>
-                    <li><input type="text" id="aminus" value="85"></li>
-                    <li><input type="text" id="bplus" value="80"></li>
-                    <li><input type="text" id="b" value="75"></li>
-                    <li><input type="text" id="bminus" value="70"></li>
-                    <li><input type="text" id="cplus" value="65"></li>
-                    <li><input type="text" id="c" value="60"></li>
-                    <li><input type="text" id="cminus" value="55"></li>
-                    <li><input type="text" id="d" value="50"></li>
-                    <li><input type="text" id="f" value="0"></li>
-                    
-                </ul>
-            </div>
-            <div id = "histogram">
-                <ul id="graph">
-                </ul>
-            </div>
-        
-        </div>    
+        <div id="container">
+		<h1>Histogram Generator</h1>
+		<br>
+		<div id="lowerbounds">
+            <h2><b>Lower bounds</b></h2>
+
+            <ul id="lb">
+                <b>
+                <li><b>Max</b></li>
+                <li>A+</li>
+                <li>A</li>
+                <li>A-</li>
+                <li>B+</li>
+                <li>B</li>
+                <li>B-</li>
+                <li>C+</li>
+                <li>C</li>
+                <li>C-</li>
+                <li>D</li>
+                <li>F</li>
+                </b>
+            </ul>
+            <ul id="input">
+                <b>
+                <li><input type="number" id="max" value="100.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="aplus" value="95.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="a" value="90.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="aminus" value="85.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="bplus" value="80.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="b" value="75.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="bminus" value="70.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="cplus" value="65.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="c" value="60.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="cminus" value="55.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="d" value="50.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                <li><input type="number" id="f" value="0.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
+                </b>
+            </ul>    
+            
+		</div>
+		<div id="histogram">
+            <h2>Histogram</h2>
+            <ul id="hg">
+                <b>
+                <li>A+</li>
+                <li>A</li>
+                <li>A-</li>
+                <li>B+</li>
+                <li>B</li>
+                <li>B-</li>
+                <li>C+</li>
+                <li>C</li>
+                <li>C-</li>
+                <li>D</li>
+                <li>F</li>
+                </b>
+            </ul>
+            <ul id="graph">
+            </ul>
+		</div>
+            
+	   </div>
     </body>
-    
+	
 </html>
