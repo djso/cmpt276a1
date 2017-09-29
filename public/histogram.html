@@ -1,0 +1,36 @@
+<html>
+    <head>
+        <script src="calculate.js"></script>
+    </head>
+    
+    <body>
+    <h1>Histogram Generator</h1>
+        <br>
+        <div id = "container">
+            <div id = "bounds" width = "500px" height = "1000px" background-color = "gray">
+                <h2>Lower bounds</h2>
+                <ul>
+                    <li><input type="number" id="max" value="100" onkeyup="checkBounds()"></li>
+                    <li><input type="number" id="aplus" value="95"></li>
+                    <li><input type="text" id="a" value="90"></li>
+                    <li><input type="text" id="aminus" value="85"></li>
+                    <li><input type="text" id="bplus" value="80"></li>
+                    <li><input type="text" id="b" value="75"></li>
+                    <li><input type="text" id="bminus" value="70"></li>
+                    <li><input type="text" id="cplus" value="65"></li>
+                    <li><input type="text" id="c" value="60"></li>
+                    <li><input type="text" id="cminus" value="55"></li>
+                    <li><input type="text" id="d" value="50"></li>
+                    <li><input type="text" id="f" value="0"></li>
+                    
+                </ul>
+            </div>
+            <div id = "histogram">
+                <ul id="graph">
+                </ul>
+            </div>
+        
+        </div>    
+    </body>
+    
+</html>
