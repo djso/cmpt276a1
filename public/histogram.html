@@ -1,3 +1,11 @@
+<!--
+CMPT276 Assignment 1
+histogram.html
+Purpose: Dynamically calculate and display histogram given an array of grades and inputs of lower bounds
+Name: Derek So
+Date: September 28, 2017
+-->
+
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="histogram.css">
@@ -26,6 +34,7 @@
                 <li>F</li>
                 </b>
             </ul>
+            <!-- Take inputs here -->
             <ul id="input">
                 <b>
                 <li><input type="number" id="max" value="100.00" onkeyup="checkBounds()" onchange="checkBounds()"></li>
@@ -61,6 +70,7 @@
                 <li>F</li>
                 </b>
             </ul>
+            <!-- histogram graph is displayed here -->
             <ul id="graph">
             </ul>
 		</div>

@@ -1,3 +1,11 @@
+/*
+CMPT276 Assignment 1
+histogram.css
+Purpose: Dynamically calculate and display histogram given an array of grades and inputs of lower bounds
+Name: Derek So
+Date: September 28, 2017
+*/
+
 #container {
     padding-top: 1px;
     padding-left: 20px;
@@ -37,10 +45,12 @@ ul {
     list-style: none;
     height: 300px;
 }
+
 li{
     font-size: 20;
     margin-left: 7px;
 }
+
 #lb{
     height: auto;
     width:100px;
@@ -51,6 +61,7 @@ li{
     padding-bottom: 46px;
     padding-top: 1px;
 }
+
 #input{
     height: auto;
     width:auto;
@@ -60,6 +71,7 @@ li{
 #input li{
     padding-bottom: 23px;
 }
+
 input{
     height: 47px;
     width: 115px;

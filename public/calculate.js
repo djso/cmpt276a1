@@ -1,10 +1,18 @@
+/*
+CMPT276 Assignment 1
+calculate.js
+Purpose: Dynamically calculate and display histogram given an array of grades and inputs of lower bounds
+Name: Derek So
+Date: September 28, 2017
+*/
 
-
+//Array of grades
 var grades = [65.95, 56.98, 78.62, 96.1, 90.3, 72.24, 92.34, 60.00, 81.43, 86.22, 88.33, 9.03, 49.93, 52.34, 53.11, 50.10, 88.88, 55.32, 55.69, 61.68, 70.44, 70.54, 90.0, 71.11, 80.01];
 
 
-
+//function to calculate and display histogram
 function calculate(){
+    //store the bounds in an array
     var bounds = [document.getElementById("f").value,
                  document.getElementById("d").value,
                  document.getElementById("cminus").value,
@@ -17,8 +25,9 @@ function calculate(){
                  document.getElementById("a").value,
                  document.getElementById("aplus").value,
                  document.getElementById("max").value];
-
+    //initialize histogram values
     var histogram = [0,0,0,0,0,0,0,0,0,0,0];
+    //loop through grades and check if they are between bounds
     for(var i = 0; i<grades.length; i++){
         for(var j = 0; j<11; j++){
             if(grades[i]>=bounds[j] && grades[i]<bounds[j+1]){
@@ -28,8 +37,9 @@ function calculate(){
         }
         
     }
-    
+    //clear histogram
     document.getElementById("graph").innerHTML="";
+    //loop through histogram array and print out histogram by appending li elements to graph ul
     for(var i = histogram.length-1; i>=0; i--){
         var ul = document.getElementById("graph");
         var li = document.createElement("li");
@@ -38,8 +48,13 @@ function calculate(){
     }
 }
 
+//function that checks if bounds are between the bound before and after, and if bound is empty
+//calls calculate if there is no error
+//changes input box to red if there is an error
 function checkBounds(){
+    //variable to store whether there is an error in the bounds
     var isError = 0;
+    
     //check if max > aplus
     if(parseFloat(document.getElementById("max").value) <= parseFloat(document.getElementById("aplus").value) || document.getElementById("max").value.length == 0){
         document.getElementById("max").style.backgroundColor="red";
@@ -181,9 +196,11 @@ function checkBounds(){
         calculate();
     }
     
+    //empties histogram if there is an error
     if(isError){
         document.getElementById("graph").innerHTML="";
     }
 }
 
+//calculate and display histogram with initialized bounds
 window.onload=calculate;
