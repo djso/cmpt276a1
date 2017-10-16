@@ -1,2 +1,3 @@
-<h1>Say#index</h1>
-<p>Find me in app/views/say/index.html.erb</p>
+<%= form_tag say_hello_path do %> <label for="name">Name</label> <%= text_field_tag :name %>
+<%= submit_tag "Submit" %>
+<% end %>

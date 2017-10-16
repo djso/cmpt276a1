@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+  resources :courses
+  resources :enrolls
+  resources :students
   get 'say/hello'
 
   get 'say/goodbye'
